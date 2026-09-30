@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5fa">
+  <meta name="description" content="Buat kamu, dari aku.">
+  <title>Buat kamu ♡</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+  <audio id="bgmAudio" loop preload="auto" src="assets/audio/bgm.mp3"></audio>
+  <div id="softHearts" class="soft-hearts" aria-hidden="true"></div>
+  <div id="entranceModal" class="entrance-overlay" role="dialog" aria-modal="true" aria-labelledby="entranceTitle">
+    <div class="entrance-box">
+      <div class="gate-top"><span class="wordmark">untukmu<span>♡</span></span><span class="gate-overline">DARI AKU, BUAT KAMU.</span></div>
+      <div class="gate-layout">
+        <div class="gate-copy">
+          <p class="gate-kicker"><span aria-hidden="true">♡</span> Ada kejutan.</p>
+          <h2 id="entranceTitle">Hei,<br> <em>kamu.</em></h2>
+          <p class="gate-description">Aku punya sesuatu.<br> Buka dulu, ya?</p>
+          <button id="enterSiteBtn" class="btn-primary">Buka Kado <span aria-hidden="true">🎁</span></button>
+        </div>
+        <div class="gate-photos" aria-hidden="true">
+          <div class="gate-photo gate-photo-left memory-one"></div>
+          <div class="gate-photo gate-photo-right memory-two"></div>
+          <div class="gate-photo gate-photo-main memory-cover"><span>buat orang kesayanganku.</span></div>
+          <span class="gate-photo-heart">♡</span>
+        </div>
+      </div>
+      <div class="gate-bottom"><span>Disiapin khusus buat kamu.</span><span aria-hidden="true">♡ &nbsp; ♡ &nbsp; ♡</span></div>
+    </div>
+  </div>
+
+  <div id="siteContent" inert aria-hidden="true">
+    <nav class="topbar" aria-label="Navigasi utama">
+      <a class="wordmark" href="#header">untukmu<span>♡</span></a>
+      <button id="soundToggleBtn" class="sound-button" aria-label="Nyalakan musik" aria-pressed="false"><span class="sound-icon" aria-hidden="true">♫</span><span id="soundLabel">Audio: OFF</span></button>
+    </nav>
+
+    <!-- SECTION 1: HEADER. Dua kartu samping memakai ulang foto galeri. -->
+    <header id="header" class="section-header">
+      <div class="hero-heading"><p class="eyebrow">DARI AKU, BUAT <span id="recipientName">Sayangku</span>.</p><h1>Untung ada<br><em>kamu.</em></h1><p class="hero-description">Aku senang kita ketemu.</p></div>
+      <div class="photo-fan" aria-label="Tiga kartu kenangan">
+        <span class="floating-note note-left" aria-hidden="true">aku + kamu <span>♡</span></span>
+        <div class="fan-card fan-left" aria-hidden="true"><div class="fan-image memory-one"></div><span class="fan-caption" id="caption1">yang bikin senyum.</span></div>
+        <div class="fan-card fan-main hero-photo-frame"><img src="assets/images/cover.jpg" alt="Foto Utama Header" width="1000" height="1400"><span class="fan-caption">kamu, lagi. kamu, terus. <span>♡</span></span></div>
+        <div class="fan-card fan-right" aria-hidden="true"><div class="fan-image memory-two"></div><span class="fan-caption" id="caption2">hari yang mau diulang.</span></div>
+        <span class="floating-note note-right" aria-hidden="true">♡</span>
+      </div>
+      <div class="hero-bottom"><p id="eventDate" class="event-tag">30 September 2026</p><a class="text-link" href="#surat">Aku mau bilang sesuatu <span aria-hidden="true">↓</span></a></div>
+    </header>
+
+    <!-- SECTION 2: SURAT -->
+    <section id="surat" class="section-letter">
+      <div class="section-heading reveal"><p class="eyebrow">01 / SURAT</p><h2>Buat kamu.</h2></div>
+      <article class="letter-card reveal">
+        <div class="letter-topline"><span>DARI AKU</span><span aria-hidden="true">♡</span></div>
+        <p class="letter-salutation">Hei, <span id="nickname">Sayang</span>.</p>
+        <p id="letterText" class="letter-body">Isi surat...</p>
+        <div class="letter-signoff"><p>Sayang kamu,</p><span id="senderName">Aku</span><span aria-hidden="true" class="signature-heart">♡</span></div>
+      </article>
+    </section>
+
+    <!-- SECTION 3: GALERI, tepat dua foto -->
+    <section id="kenangan" class="section-gallery">
+      <div class="section-heading reveal"><p class="eyebrow">02 / KENANGAN</p><h2>Kita, di sini.</h2><p>Beberapa foto yang aku suka.</p></div>
+      <div class="gallery-grid-2">
+        <figure class="photo-card gallery-one reveal"><div class="photo-wrap"><img src="assets/images/photo_1.jpg" alt="Foto Kenangan 1" width="1000" height="1300" loading="lazy"><span class="memory-index">01</span></div><figcaption><span id="caption1">Kita simpan yang ini.</span><span class="caption-sub" id="captionNote1"></span></figcaption></figure>
+        <figure class="photo-card gallery-two reveal"><div class="photo-wrap"><img src="assets/images/photo_2.jpg" alt="Foto Kenangan 2" width="1000" height="1300" loading="lazy"><span class="memory-index">02</span></div><figcaption><span id="caption2">Mau ngulang hari ini.</span><span class="caption-sub" id="captionNote2"></span></figcaption></figure>
+      </div>
+      <div class="closing-note reveal"><span class="closing-heart" aria-hidden="true">♡</span><p>Foto berikutnya,<br><em>bareng kamu lagi.</em></p></div>
+    </section>
+    <footer class="footer-simple"><a href="#header">untukmu♡</a><p>Dari aku, yang sayang kamu.</p><a class="back-top" href="#header" aria-label="Kembali ke atas">↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
