@@ -2,7 +2,7 @@
 // Pertahankan nama BASIC_CONFIG, key utama, dan ID HTML untuk integrasi controller.
 const BASIC_CONFIG = {
   "recipientName": "Sayangku",
-  "nickname": "Sayang",
+  "nickname": "Anjing",
   "eventDate": "30 September 2026",
   "senderName": "Aku",
   "loveLetter": "Makasih ya, udah mau nemenin aku. Buat obrolan yang kadang nggak penting, buat sabarnya kamu, dan buat waktu yang kamu luangin.\n\nAku suka dengar cerita kamu. Suka waktu kamu ketawa. Bahkan waktu kita nggak ngapa-ngapain, aku tetap senang kalau ada kamu.\n\nKalau lagi capek, cerita aja. Nggak perlu nunggu semuanya beres dulu. Aku mungkin nggak selalu punya jawaban, tapi aku mau dengerin.\n\nAku masih pengin jalan bareng kamu, nyoba tempat makan yang belum pernah kita datangi, dan punya lebih banyak foto berdua. Pelan-pelan aja. Yang penting sama kamu.",
