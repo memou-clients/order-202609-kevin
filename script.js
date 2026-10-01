@@ -10,7 +10,7 @@ const BASIC_CONFIG = {
   "caption2": "Mau ngulang hari ini. foto atas paling kanan",
   "captionNote1": "",
   "captionNote2": "",
-  "musicVolume": 0.32,
+  "musicVolume": "999",
   "photoCaption1": "Kita simpan yang ini. foto bawah paling kiri",
   "photoCaption2": "Mau ngulang hari ini.foto bawah paling kanan"
 };
